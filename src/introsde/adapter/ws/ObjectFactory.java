@@ -25,8 +25,10 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _SearchFoodResponse_QNAME = new QName("http://ws.adapter.introsde/", "searchFoodResponse");
+    private final static QName _GetExercisesResponse_QNAME = new QName("http://ws.adapter.introsde/", "getExercisesResponse");
     private final static QName _GetFoodResponse_QNAME = new QName("http://ws.adapter.introsde/", "getFoodResponse");
     private final static QName _GetFood_QNAME = new QName("http://ws.adapter.introsde/", "getFood");
+    private final static QName _GetExercises_QNAME = new QName("http://ws.adapter.introsde/", "getExercises");
     private final static QName _SearchFood_QNAME = new QName("http://ws.adapter.introsde/", "searchFood");
 
     /**
@@ -45,11 +47,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetExercises }
+     * 
+     */
+    public GetExercises createGetExercises() {
+        return new GetExercises();
+    }
+
+    /**
      * Create an instance of {@link GetFood }
      * 
      */
     public GetFood createGetFood() {
         return new GetFood();
+    }
+
+    /**
+     * Create an instance of {@link GetExercisesResponse }
+     * 
+     */
+    public GetExercisesResponse createGetExercisesResponse() {
+        return new GetExercisesResponse();
     }
 
     /**
@@ -66,6 +84,14 @@ public class ObjectFactory {
      */
     public SearchFoodResponse createSearchFoodResponse() {
         return new SearchFoodResponse();
+    }
+
+    /**
+     * Create an instance of {@link Exercise }
+     * 
+     */
+    public Exercise createExercise() {
+        return new Exercise();
     }
 
     /**
@@ -86,6 +112,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetExercisesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "getExercisesResponse")
+    public JAXBElement<GetExercisesResponse> createGetExercisesResponse(GetExercisesResponse value) {
+        return new JAXBElement<GetExercisesResponse>(_GetExercisesResponse_QNAME, GetExercisesResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetFoodResponse }{@code >}}
      * 
      */
@@ -101,6 +136,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "getFood")
     public JAXBElement<GetFood> createGetFood(GetFood value) {
         return new JAXBElement<GetFood>(_GetFood_QNAME, GetFood.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetExercises }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "getExercises")
+    public JAXBElement<GetExercises> createGetExercises(GetExercises value) {
+        return new JAXBElement<GetExercises>(_GetExercises_QNAME, GetExercises.class, null, value);
     }
 
     /**

@@ -3,6 +3,7 @@ package introsde.localdatabase.soap;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -17,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="personId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="measure" type="{http://soap.localdatabase.introsde/}measure" minOccurs="0"/>
+ *         &lt;element ref="{http://soap.localdatabase.introsde/}measure" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -34,6 +35,7 @@ import javax.xml.bind.annotation.XmlType;
 public class UpdatePersonMeasure {
 
     protected Long personId;
+    @XmlElement(namespace = "http://soap.localdatabase.introsde/")
     protected Measure measure;
 
     /**

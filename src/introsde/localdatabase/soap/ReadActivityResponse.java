@@ -10,16 +10,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for readPersonHistoryResponse complex type.
+ * <p>Java class for readActivityResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="readPersonHistoryResponse">
+ * &lt;complexType name="readActivityResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://soap.localdatabase.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element ref="{http://soap.localdatabase.introsde/}activity" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,41 +29,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "readPersonHistoryResponse", propOrder = {
-    "measure"
+@XmlType(name = "readActivityResponse", propOrder = {
+    "activity"
 })
-public class ReadPersonHistoryResponse {
+public class ReadActivityResponse {
 
     @XmlElement(namespace = "http://soap.localdatabase.introsde/")
-    protected List<Measure> measure;
+    protected List<Activity> activity;
 
     /**
-     * Gets the value of the measure property.
+     * Gets the value of the activity property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the measure property.
+     * This is why there is not a <CODE>set</CODE> method for the activity property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getMeasure().add(newItem);
+     *    getActivity().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link Measure }
+     * {@link Activity }
      * 
      * 
      */
-    public List<Measure> getMeasure() {
-        if (measure == null) {
-            measure = new ArrayList<Measure>();
+    public List<Activity> getActivity() {
+        if (activity == null) {
+            activity = new ArrayList<Activity>();
         }
-        return this.measure;
+        return this.activity;
     }
 
 }

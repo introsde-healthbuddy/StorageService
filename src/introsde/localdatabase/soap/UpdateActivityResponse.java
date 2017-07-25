@@ -8,16 +8,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for updatePersonResponse complex type.
+ * <p>Java class for updateActivityResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="updatePersonResponse">
+ * &lt;complexType name="updateActivityResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{http://soap.localdatabase.introsde/}person" minOccurs="0"/>
+ *         &lt;element ref="{http://soap.localdatabase.introsde/}activity" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,36 +27,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "updatePersonResponse", propOrder = {
-    "person"
+@XmlType(name = "updateActivityResponse", propOrder = {
+    "activity"
 })
-public class UpdatePersonResponse {
+public class UpdateActivityResponse {
 
     @XmlElement(namespace = "http://soap.localdatabase.introsde/")
-    protected Person person;
+    protected Activity activity;
 
     /**
-     * Gets the value of the person property.
+     * Gets the value of the activity property.
      * 
      * @return
      *     possible object is
-     *     {@link Person }
+     *     {@link Activity }
      *     
      */
-    public Person getPerson() {
-        return person;
+    public Activity getActivity() {
+        return activity;
     }
 
     /**
-     * Sets the value of the person property.
+     * Sets the value of the activity property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Person }
+     *     {@link Activity }
      *     
      */
-    public void setPerson(Person value) {
-        this.person = value;
+    public void setActivity(Activity value) {
+        this.activity = value;
     }
 
 }

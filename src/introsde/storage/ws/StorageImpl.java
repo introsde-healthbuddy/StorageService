@@ -6,9 +6,9 @@ import javax.jws.WebService;
 import javax.xml.ws.Holder;
 
 import introsde.storage.ws.Storage;
-
 import introsde.localdatabase.soap.*;
 import introsde.localdatabase.soap.Person;
+import introsde.localdatabase.soap.Activity;
 import introsde.adapter.ws.*;
 
 @WebService(endpointInterface = "introsde.storage.ws.Storage",serviceName="StorageService")
@@ -118,6 +118,37 @@ public class StorageImpl implements Storage{
 	public Measure updatePersonMeasure(Long id, Measure measure) {
 		return null;
 	}
+	
+//	Activity
+	
+	@Override
+	public List<Activity> readActivity(Long id) {
+		initialize();
+		return pInterface.readActivity(id);
+	}
+	
+	@Override
+	public Activity createActivity(Long id, Activity a) {
+		initialize();
+		Holder<Activity> holder = new Holder<Activity>(a);
+		pInterface.createActivity(id, holder);
+		return holder.value;
+	}
+	
+	@Override
+	public Activity updateActivity(Long id, Activity a) {
+		initialize();
+		Holder<Activity> holder=new Holder<Activity>(a);
+		pInterface.updateActivity(id, holder);
+		return holder.value;
+		
+	}
+	
+	@Override 
+	public int deleteActivity(Long id) {
+		initialize();
+		return pInterface.deleteActivity(id);
+	}
 
 //	FOOD
 	
@@ -128,19 +159,19 @@ public class StorageImpl implements Storage{
 	}
 	
 	
-//	@Override
-//	public Food getFood(int id) {
-//		initialize();
-//		return aInterface.getFood(id);
-//	}
+	@Override
+	public Food getFood(int id) {
+		initialize();
+		return aInterface.getFood(id);
+	}
 	
 //	EXERCISES
 	
-//		@Override
-//		public List<Exercise> getExercises() {
-//			initialize();
-//			return aInterface.getExercises();
-//		}
+	@Override
+	public List<Exercise> getExercises() {
+		initialize();
+		return aInterface.getExercises();
+	}
 	
 //
 //

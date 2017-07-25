@@ -55,4 +55,16 @@ public interface Interface {
         @WebParam(name = "text", targetNamespace = "")
         String text);
 
+    /**
+     * 
+     * @return
+     *     returns java.util.List<introsde.adapter.ws.Exercise>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getExercises", targetNamespace = "http://ws.adapter.introsde/", className = "introsde.adapter.ws.GetExercises")
+    @ResponseWrapper(localName = "getExercisesResponse", targetNamespace = "http://ws.adapter.introsde/", className = "introsde.adapter.ws.GetExercisesResponse")
+    @Action(input = "http://ws.adapter.introsde/Interface/getExercisesRequest", output = "http://ws.adapter.introsde/Interface/getExercisesResponse")
+    public List<Exercise> getExercises();
+
 }

@@ -8,17 +8,17 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for savePersonMeasure complex type.
+ * <p>Java class for createActivity complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="savePersonMeasure">
+ * &lt;complexType name="createActivity">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="personId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element ref="{http://soap.localdatabase.introsde/}measure" minOccurs="0"/>
+ *         &lt;element ref="{http://soap.localdatabase.introsde/}activity" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -28,15 +28,15 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "savePersonMeasure", propOrder = {
+@XmlType(name = "createActivity", propOrder = {
     "personId",
-    "measure"
+    "activity"
 })
-public class SavePersonMeasure {
+public class CreateActivity {
 
     protected Long personId;
     @XmlElement(namespace = "http://soap.localdatabase.introsde/")
-    protected Measure measure;
+    protected Activity activity;
 
     /**
      * Gets the value of the personId property.
@@ -63,27 +63,27 @@ public class SavePersonMeasure {
     }
 
     /**
-     * Gets the value of the measure property.
+     * Gets the value of the activity property.
      * 
      * @return
      *     possible object is
-     *     {@link Measure }
+     *     {@link Activity }
      *     
      */
-    public Measure getMeasure() {
-        return measure;
+    public Activity getActivity() {
+        return activity;
     }
 
     /**
-     * Sets the value of the measure property.
+     * Sets the value of the activity property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Measure }
+     *     {@link Activity }
      *     
      */
-    public void setMeasure(Measure value) {
-        this.measure = value;
+    public void setActivity(Activity value) {
+        this.activity = value;
     }
 
 }
