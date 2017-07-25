@@ -21,8 +21,8 @@ public class StorageImpl implements Storage{
 	
 	
 	public void initialize(){
-//		aService = new AdapterService();
-//		aInterface = aService.getImplementationPort();
+		aService = new AdapterService();
+		aInterface = aService.getImplementationPort();
 		pService = new PeopleService();
 		pInterface = pService.getPeopleImplPort();
 	}
@@ -32,10 +32,9 @@ public class StorageImpl implements Storage{
 	public Person createPerson(Person person) {
 		initialize();
 		
-//		introsde.adapter.ws.Person p = aInterface.createPerson();
-//		person.setAuthSecret(p.getAuthSecret());
-//		person.setAuthToken(p.getAuthToken());
-		
+		introsde.adapter.ws.Person p = aInterface.createPerson();
+		person.setAuthSecret(p.getAuthSecret());
+		person.setAuthToken(p.getAuthToken());
 		Holder<Person> holder=new Holder<Person>(person);
 		pInterface.createPerson(holder);
 		person = holder.value;
@@ -72,11 +71,11 @@ public class StorageImpl implements Storage{
 		initialize();
 		return pInterface.deletePerson(id);
 	}
-	
+
 	@Override
-	public Person getPersonById(Long personId) {
+	public Person getPersonByChatId(Long chatId) {
 		initialize();
-		return pInterface.getPersonById(personId);
+		return pInterface.getPersonByChatId(chatId);
 	}
 
 	@Override
@@ -103,6 +102,14 @@ public class StorageImpl implements Storage{
 	@Override
 	public Measure savePersonMeasure(Long id, Measure measure) {
 		initialize();
+		if(measure.getMeasureType().equals("weight")){
+			Person p = pInterface.readPerson(id);
+			introsde.adapter.ws.Person person = new introsde.adapter.ws.Person();
+			person.setAuthSecret(p.getAuthSecret());
+			person.setAuthToken(p.getAuthToken());
+			System.out.println(Double.parseDouble(measure.getMeasureValue()));
+			aInterface.weightUpdate(person, Double.parseDouble(measure.getMeasureValue()));
+		}
 		Holder<Measure> holder=new Holder<Measure>(measure);
 		pInterface.savePersonMeasure(id, holder);
 		return holder.value;
