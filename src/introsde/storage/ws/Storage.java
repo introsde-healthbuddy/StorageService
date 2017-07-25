@@ -17,8 +17,6 @@ import introsde.localdatabase.soap.Activity;
 import introsde.localdatabase.soap.Measure;
 import introsde.localdatabase.soap.Person;
 
-
-
 @WebService
 @SOAPBinding(style = Style.DOCUMENT, use=Use.LITERAL) //optional
 public interface Storage {
@@ -63,21 +61,21 @@ public interface Storage {
     @WebResult(name="measure") 
     public Measure updatePersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measure") Measure measure);
 
-    @WebMethod(operationName="createActivity")
-    @WebResult(name="activity") 
-    public Activity createActivity(@WebParam(name="personId") Long id, @WebParam(name="activity") Activity activity);
-    
-    @WebMethod(operationName="readActivity")
-    @WebResult(name="activity") 
-    public List<Activity> readActivity(@WebParam(name="personId") Long id);
-    
-    @WebMethod(operationName="updateActivity")
-    @WebResult(name="activity") 
-    public Activity updateActivity(@WebParam(name="personId") Long id, @WebParam(name="activity") Activity activity);
-    
-    @WebMethod(operationName="deleteActivity")
-    @WebResult(name="succes") 
-    public int deleteActivity(@WebParam(name="activityId") Long id);
+//    @WebMethod(operationName="createActivity")
+//    @WebResult(name="activity") 
+//    public Activity createActivity(@WebParam(name="personId") Long id, @WebParam(name="activity") Activity activity);
+//    
+//    @WebMethod(operationName="readActivity")
+//    @WebResult(name="activity") 
+//    public List<Activity> readActivity(@WebParam(name="personId") Long id);
+//    
+//    @WebMethod(operationName="updateActivity")
+//    @WebResult(name="activity") 
+//    public Activity updateActivity(@WebParam(name="personId") Long id, @WebParam(name="activity") Activity activity);
+//    
+//    @WebMethod(operationName="deleteActivity")
+//    @WebResult(name="succes") 
+//    public int deleteActivity(@WebParam(name="activityId") Long id);
     
 	@WebMethod(operationName="getExercises")
 	@WebResult(name="exercises") 

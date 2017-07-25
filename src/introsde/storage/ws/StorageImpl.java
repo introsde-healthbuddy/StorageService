@@ -121,33 +121,33 @@ public class StorageImpl implements Storage{
 	
 //	Activity
 	
-	@Override
-	public List<Activity> readActivity(Long id) {
-		initialize();
-		return pInterface.readActivity(id);
-	}
-	
-	@Override
-	public Activity createActivity(Long id, Activity a) {
-		initialize();
-		Holder<Activity> holder = new Holder<Activity>(a);
-		pInterface.createActivity(id, holder);
-		return holder.value;
-	}
-	
-	@Override
-	public Activity updateActivity(Long id, Activity a) {
-		initialize();
-		Holder<Activity> holder=new Holder<Activity>(a);
-		pInterface.updateActivity(id, holder);
-		return holder.value;
-		
-	}
-	
-	@Override 
-	public int deleteActivity(Long id) {
-		initialize();
-		return pInterface.deleteActivity(id);
+//	@Override
+//	public List<Activity> readActivity(Long id) {
+//		initialize();
+//		return pInterface.readActivity(id);
+//	}
+//	
+//	@Override
+//	public Activity createActivity(Long id, Activity a) {
+//		initialize();
+//		Holder<Activity> holder = new Holder<Activity>(a);
+//		pInterface.createActivity(id, holder);
+//		return holder.value;
+//	}
+//	
+//	@Override
+//	public Activity updateActivity(Long id, Activity a) {
+//		initialize();
+//		Holder<Activity> holder=new Holder<Activity>(a);
+//		pInterface.updateActivity(id, holder);
+//		return holder.value;
+//		
+//	}
+//	
+//	@Override 
+//	public int deleteActivity(Long id) {
+//		initialize();
+//		return pInterface.deleteActivity(id);
 	}
 
 //	FOOD
