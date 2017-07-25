@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per recipe complex type.
+ * <p>Java class for recipe complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="recipe">
@@ -58,7 +58,7 @@ public class Recipe {
     protected String url;
 
     /**
-     * Recupera il valore della proprietà calories.
+     * Gets the value of the calories property.
      * 
      */
     public int getCalories() {
@@ -66,7 +66,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà calories.
+     * Sets the value of the calories property.
      * 
      */
     public void setCalories(int value) {
@@ -74,7 +74,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà carbohydrate.
+     * Gets the value of the carbohydrate property.
      * 
      */
     public double getCarbohydrate() {
@@ -82,7 +82,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà carbohydrate.
+     * Sets the value of the carbohydrate property.
      * 
      */
     public void setCarbohydrate(double value) {
@@ -90,7 +90,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà description.
+     * Gets the value of the description property.
      * 
      * @return
      *     possible object is
@@ -102,7 +102,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà description.
+     * Sets the value of the description property.
      * 
      * @param value
      *     allowed object is
@@ -114,7 +114,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà fat.
+     * Gets the value of the fat property.
      * 
      */
     public double getFat() {
@@ -122,7 +122,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà fat.
+     * Sets the value of the fat property.
      * 
      */
     public void setFat(double value) {
@@ -130,7 +130,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà id.
+     * Gets the value of the id property.
      * 
      */
     public int getId() {
@@ -138,7 +138,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà id.
+     * Sets the value of the id property.
      * 
      */
     public void setId(int value) {
@@ -146,7 +146,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà image.
+     * Gets the value of the image property.
      * 
      * @return
      *     possible object is
@@ -158,7 +158,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà image.
+     * Sets the value of the image property.
      * 
      * @param value
      *     allowed object is
@@ -170,7 +170,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà name.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
@@ -182,7 +182,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà name.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
@@ -194,7 +194,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà protein.
+     * Gets the value of the protein property.
      * 
      */
     public double getProtein() {
@@ -202,7 +202,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà protein.
+     * Sets the value of the protein property.
      * 
      */
     public void setProtein(double value) {
@@ -210,7 +210,7 @@ public class Recipe {
     }
 
     /**
-     * Recupera il valore della proprietà url.
+     * Gets the value of the url property.
      * 
      * @return
      *     possible object is
@@ -222,7 +222,7 @@ public class Recipe {
     }
 
     /**
-     * Imposta il valore della proprietà url.
+     * Sets the value of the url property.
      * 
      * @param value
      *     allowed object is

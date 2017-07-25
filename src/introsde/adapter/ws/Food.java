@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per food complex type.
+ * <p>Java class for food complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="food">
@@ -52,7 +52,7 @@ public class Food {
     protected String foodUrl;
 
     /**
-     * Recupera il valore della proprietà foodDescription.
+     * Gets the value of the foodDescription property.
      * 
      * @return
      *     possible object is
@@ -64,7 +64,7 @@ public class Food {
     }
 
     /**
-     * Imposta il valore della proprietà foodDescription.
+     * Sets the value of the foodDescription property.
      * 
      * @param value
      *     allowed object is
@@ -76,7 +76,7 @@ public class Food {
     }
 
     /**
-     * Recupera il valore della proprietà foodId.
+     * Gets the value of the foodId property.
      * 
      */
     public int getFoodId() {
@@ -84,7 +84,7 @@ public class Food {
     }
 
     /**
-     * Imposta il valore della proprietà foodId.
+     * Sets the value of the foodId property.
      * 
      */
     public void setFoodId(int value) {
@@ -92,7 +92,7 @@ public class Food {
     }
 
     /**
-     * Recupera il valore della proprietà foodName.
+     * Gets the value of the foodName property.
      * 
      * @return
      *     possible object is
@@ -104,7 +104,7 @@ public class Food {
     }
 
     /**
-     * Imposta il valore della proprietà foodName.
+     * Sets the value of the foodName property.
      * 
      * @param value
      *     allowed object is
@@ -116,7 +116,7 @@ public class Food {
     }
 
     /**
-     * Recupera il valore della proprietà foodType.
+     * Gets the value of the foodType property.
      * 
      * @return
      *     possible object is
@@ -128,7 +128,7 @@ public class Food {
     }
 
     /**
-     * Imposta il valore della proprietà foodType.
+     * Sets the value of the foodType property.
      * 
      * @param value
      *     allowed object is
@@ -140,7 +140,7 @@ public class Food {
     }
 
     /**
-     * Recupera il valore della proprietà foodUrl.
+     * Gets the value of the foodUrl property.
      * 
      * @return
      *     possible object is
@@ -152,7 +152,7 @@ public class Food {
     }
 
     /**
-     * Imposta il valore della proprietà foodUrl.
+     * Sets the value of the foodUrl property.
      * 
      * @param value
      *     allowed object is

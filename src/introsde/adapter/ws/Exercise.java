@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per exercise complex type.
+ * <p>Java class for exercise complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="exercise">
@@ -43,7 +43,7 @@ public class Exercise {
     protected String name;
 
     /**
-     * Recupera il valore della proprietà calories.
+     * Gets the value of the calories property.
      * 
      */
     public double getCalories() {
@@ -51,7 +51,7 @@ public class Exercise {
     }
 
     /**
-     * Imposta il valore della proprietà calories.
+     * Sets the value of the calories property.
      * 
      */
     public void setCalories(double value) {
@@ -59,7 +59,7 @@ public class Exercise {
     }
 
     /**
-     * Recupera il valore della proprietà id.
+     * Gets the value of the id property.
      * 
      */
     public int getId() {
@@ -67,7 +67,7 @@ public class Exercise {
     }
 
     /**
-     * Imposta il valore della proprietà id.
+     * Sets the value of the id property.
      * 
      */
     public void setId(int value) {
@@ -75,7 +75,7 @@ public class Exercise {
     }
 
     /**
-     * Recupera il valore della proprietà minutes.
+     * Gets the value of the minutes property.
      * 
      */
     public int getMinutes() {
@@ -83,7 +83,7 @@ public class Exercise {
     }
 
     /**
-     * Imposta il valore della proprietà minutes.
+     * Sets the value of the minutes property.
      * 
      */
     public void setMinutes(int value) {
@@ -91,7 +91,7 @@ public class Exercise {
     }
 
     /**
-     * Recupera il valore della proprietà name.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
@@ -103,7 +103,7 @@ public class Exercise {
     }
 
     /**
-     * Imposta il valore della proprietà name.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
