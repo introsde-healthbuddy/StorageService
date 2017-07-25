@@ -23,29 +23,26 @@ import introsde.localdatabase.soap.Person;
 @SOAPBinding(style = Style.DOCUMENT, use=Use.LITERAL) //optional
 public interface Storage {
     
-//	@WebMethod(operationName="createPerson")
-//	@WebResult(name="person") 
-//	public Person createPerson(@WebParam(name="person") Person person);
-//	
-//    @WebMethod(operationName="getPeopleList")
-//    @WebResult(name="people")
-//    public List<Person> getPeople();
-//    
-//    @WebMethod(operationName="readPerson")
-//    @WebResult(name="person") 
-//    public Person readPerson(@WebParam(name="idPerson") Long id);
-//    
-//    @WebMethod(operationName="updatePerson")
-//    @WebResult(name="person") 
-//    public Person updatePerson(@WebParam(name="person") Person person);
-//    
-//    @WebMethod(operationName="deletePerson")
-//    @WebResult(name="success") 
-//    public int deletePerson(@WebParam(name="idPerson") Long id);
-//    
-////    @WebMethod(operationName="getPersonByChatId")
-////    @WebResult(name="person") 
-////    public Person getPersonByChatId(@WebParam(name="chatId") Long chatId);
+	@WebMethod(operationName="createPerson")
+	@WebResult(name="person") 
+	public Person createPerson(@WebParam(name="person") Person person);
+	
+    @WebMethod(operationName="getPeopleList")
+    @WebResult(name="people")
+    public List<Person> getPeople();
+    
+    @WebMethod(operationName="readPerson")
+    @WebResult(name="person") 
+    public Person readPerson(@WebParam(name="idPerson") Long id);
+    
+    @WebMethod(operationName="updatePerson")
+    @WebResult(name="person") 
+    public Person updatePerson(@WebParam(name="person") Person person);
+    
+    @WebMethod(operationName="deletePerson")
+    @WebResult(name="success") 
+    public int deletePerson(@WebParam(name="idPerson") Long id);
+
 //    
 //    @WebMethod(operationName="readPersonHistory")
 //    @WebResult(name="measure") 

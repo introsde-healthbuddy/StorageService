@@ -28,56 +28,54 @@ public class StorageImpl implements Storage{
 	}
 
 
-//	@Override
-//	public Person createPerson(Person person) {
-//		initialize();
-//		
+	@Override
+	public Person createPerson(Person person) {
+		initialize();
+		
 //		introsde.adapter.ws.Person p = aInterface.createPerson();
 //		person.setAuthSecret(p.getAuthSecret());
 //		person.setAuthToken(p.getAuthToken());
-//		Holder<Person> holder=new Holder<Person>(person);
-//		pInterface.createPerson(holder);
-//		person = holder.value;
-//		
-//		return person;
-//	}
-//
-//
-//	@Override
-//	public List<Person> getPeople() {
-//		initialize();
-//		return pInterface.getPeopleList();
-//	}
-//
-//
-//	@Override
-//	public Person readPerson(Long id) {
-//		initialize();
-//		return pInterface.readPerson(id);
-//	}
-//
-//
-//	@Override
-//	public Person updatePerson(Person person) {
-//		initialize();
-//		Holder<Person> holder=new Holder<Person>(person);
-//		pInterface.updatePerson(holder);
-//		return holder.value;
-//	}
-//
-//
-//	@Override
-//	public int deletePerson(Long id) {
-//		initialize();
-//		return pInterface.deletePerson(id);
-//	}
-//
-////	@Override
-////	public Person getPersonByChatId(Long chatId) {
-////		initialize();
-////		return pInterface.getPersonByChatId(chatId);
-////	}
-//
+		Holder<Person> holder=new Holder<Person>(person);
+		pInterface.createPerson(holder);
+		person = holder.value;
+		
+		return person;
+	}
+
+
+	@Override
+	public List<Person> getPeople() {
+		initialize();
+		return pInterface.getPeopleList();
+	}
+
+
+	@Override
+	public Person readPerson(Long id) {
+		initialize();
+		return pInterface.readPerson(id);
+	}
+
+
+	@Override
+	public Person updatePerson(Person person) {
+		initialize();
+		Holder<Person> holder=new Holder<Person>(person);
+		pInterface.updatePerson(holder);
+		return holder.value;
+	}
+
+
+	@Override
+	public int deletePerson(Long id) {
+		initialize();
+		return pInterface.deletePerson(id);
+	}
+
+	
+//	HEALTH
+	
+	
 //	@Override
 //	public List<Measure> readPersonHistory(Long id, String measureType) {
 //		initialize();
