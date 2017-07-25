@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "AdapterService", targetNamespace = "http://ws.adapter.introsde/", wsdlLocation = "http://10.218.204.126:6903/adapter?wsdl")
+@WebServiceClient(name = "AdapterService", targetNamespace = "http://ws.adapter.introsde/", wsdlLocation = "https://healthbuddy-adapterservice.herokuapp.com/adapter?wsdl")
 public class AdapterService
     extends Service
 {
@@ -30,7 +30,7 @@ public class AdapterService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://10.218.204.126:6903/adapter?wsdl");
+            url = new URL("https://healthbuddy-adapterservice.herokuapp.com/adapter?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
