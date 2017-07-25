@@ -28,15 +28,15 @@ public interface People {
 
     /**
      * 
-     * @return
-     *     returns java.util.List<introsde.localdatabase.soap.Person>
+     * @param person
      */
     @WebMethod
-    @WebResult(name = "people", targetNamespace = "")
-    @RequestWrapper(localName = "getPeopleList", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.GetPeopleList")
-    @ResponseWrapper(localName = "getPeopleListResponse", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.GetPeopleListResponse")
-    @Action(input = "http://soap.localdatabase.introsde/People/getPeopleListRequest", output = "http://soap.localdatabase.introsde/People/getPeopleListResponse")
-    public List<Person> getPeopleList();
+    @RequestWrapper(localName = "updatePerson", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.UpdatePerson")
+    @ResponseWrapper(localName = "updatePersonResponse", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.UpdatePersonResponse")
+    @Action(input = "http://soap.localdatabase.introsde/People/updatePersonRequest", output = "http://soap.localdatabase.introsde/People/updatePersonResponse")
+    public void updatePerson(
+        @WebParam(name = "person", targetNamespace = "http://soap.localdatabase.introsde/", mode = WebParam.Mode.INOUT)
+        Holder<Person> person);
 
     /**
      * 
@@ -55,6 +55,18 @@ public interface People {
 
     /**
      * 
+     * @return
+     *     returns java.util.List<introsde.localdatabase.soap.Person>
+     */
+    @WebMethod
+    @WebResult(name = "people", targetNamespace = "")
+    @RequestWrapper(localName = "getPeopleList", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.GetPeopleList")
+    @ResponseWrapper(localName = "getPeopleListResponse", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.GetPeopleListResponse")
+    @Action(input = "http://soap.localdatabase.introsde/People/getPeopleListRequest", output = "http://soap.localdatabase.introsde/People/getPeopleListResponse")
+    public List<Person> getPeopleList();
+
+    /**
+     * 
      * @param person
      */
     @WebMethod
@@ -67,15 +79,21 @@ public interface People {
 
     /**
      * 
-     * @param person
+     * @param personId
+     * @param measureType
+     * @return
+     *     returns java.util.List<introsde.localdatabase.soap.Measure>
      */
     @WebMethod
-    @RequestWrapper(localName = "updatePerson", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.UpdatePerson")
-    @ResponseWrapper(localName = "updatePersonResponse", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.UpdatePersonResponse")
-    @Action(input = "http://soap.localdatabase.introsde/People/updatePersonRequest", output = "http://soap.localdatabase.introsde/People/updatePersonResponse")
-    public void updatePerson(
-        @WebParam(name = "person", targetNamespace = "http://soap.localdatabase.introsde/", mode = WebParam.Mode.INOUT)
-        Holder<Person> person);
+    @WebResult(name = "measure", targetNamespace = "http://soap.localdatabase.introsde/")
+    @RequestWrapper(localName = "readPersonHistory", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.ReadPersonHistory")
+    @ResponseWrapper(localName = "readPersonHistoryResponse", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.ReadPersonHistoryResponse")
+    @Action(input = "http://soap.localdatabase.introsde/People/readPersonHistoryRequest", output = "http://soap.localdatabase.introsde/People/readPersonHistoryResponse")
+    public List<Measure> readPersonHistory(
+        @WebParam(name = "personId", targetNamespace = "")
+        Long personId,
+        @WebParam(name = "measureType", targetNamespace = "")
+        String measureType);
 
     /**
      * 
@@ -106,24 +124,6 @@ public interface People {
     public Person getPersonById(
         @WebParam(name = "personId", targetNamespace = "")
         Long personId);
-
-    /**
-     * 
-     * @param personId
-     * @param measureType
-     * @return
-     *     returns java.util.List<introsde.localdatabase.soap.Measure>
-     */
-    @WebMethod
-    @WebResult(name = "measure", targetNamespace = "http://soap.localdatabase.introsde/")
-    @RequestWrapper(localName = "readPersonHistory", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.ReadPersonHistory")
-    @ResponseWrapper(localName = "readPersonHistoryResponse", targetNamespace = "http://soap.localdatabase.introsde/", className = "introsde.localdatabase.soap.ReadPersonHistoryResponse")
-    @Action(input = "http://soap.localdatabase.introsde/People/readPersonHistoryRequest", output = "http://soap.localdatabase.introsde/People/readPersonHistoryResponse")
-    public List<Measure> readPersonHistory(
-        @WebParam(name = "personId", targetNamespace = "")
-        Long personId,
-        @WebParam(name = "measureType", targetNamespace = "")
-        String measureType);
 
     /**
      * 

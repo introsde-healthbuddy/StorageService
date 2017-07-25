@@ -6,8 +6,8 @@ import javax.jws.WebService;
 import javax.xml.ws.Holder;
 
 import introsde.storage.ws.Storage;
-import introsde.localdatabase.soap.*;
 import introsde.localdatabase.soap.Person;
+import introsde.localdatabase.soap.*;
 
 import introsde.adapter.ws.*;
 

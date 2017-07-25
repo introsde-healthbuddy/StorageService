@@ -13,7 +13,6 @@ import javax.jws.soap.SOAPBinding.Use;
 
 import introsde.adapter.ws.Exercise;
 import introsde.adapter.ws.Food;
-import introsde.localdatabase.soap.Activity;
 import introsde.localdatabase.soap.Measure;
 import introsde.localdatabase.soap.Person;
 
