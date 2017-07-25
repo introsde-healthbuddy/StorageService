@@ -8,7 +8,7 @@ import javax.xml.ws.Holder;
 import introsde.storage.ws.Storage;
 import introsde.localdatabase.soap.*;
 import introsde.localdatabase.soap.Person;
-import introsde.localdatabase.soap.Activity;
+
 import introsde.adapter.ws.*;
 
 @WebService(endpointInterface = "introsde.storage.ws.Storage",serviceName="StorageService")

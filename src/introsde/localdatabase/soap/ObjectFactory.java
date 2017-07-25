@@ -24,39 +24,30 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _UpdatePersonMeasureResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "updatePersonMeasureResponse");
-    private final static QName _DeletePersonResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "deletePersonResponse");
-    private final static QName _CreateActivityResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "createActivityResponse");
-    private final static QName _GetPersonById_QNAME = new QName("http://soap.localdatabase.introsde/", "getPersonById");
-    private final static QName _UpdateActivity_QNAME = new QName("http://soap.localdatabase.introsde/", "updateActivity");
-    private final static QName _Activity_QNAME = new QName("http://soap.localdatabase.introsde/", "activity");
-    private final static QName _ReadMeasureTypesResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "readMeasureTypesResponse");
-    private final static QName _DeleteActivityResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "deleteActivityResponse");
-    private final static QName _ReadActivity_QNAME = new QName("http://soap.localdatabase.introsde/", "readActivity");
-    private final static QName _GetPersonByIdResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "getPersonByIdResponse");
-    private final static QName _ReadActivityResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "readActivityResponse");
     private final static QName _Person_QNAME = new QName("http://soap.localdatabase.introsde/", "person");
     private final static QName _ReadPerson_QNAME = new QName("http://soap.localdatabase.introsde/", "readPerson");
-    private final static QName _DeleteActivity_QNAME = new QName("http://soap.localdatabase.introsde/", "deleteActivity");
     private final static QName _GetPeopleListResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "getPeopleListResponse");
     private final static QName _Measure_QNAME = new QName("http://soap.localdatabase.introsde/", "measure");
     private final static QName _ReadPersonResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "readPersonResponse");
+    private final static QName _UpdatePersonMeasureResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "updatePersonMeasureResponse");
+    private final static QName _DeletePersonResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "deletePersonResponse");
     private final static QName _ReadPersonHistory_QNAME = new QName("http://soap.localdatabase.introsde/", "readPersonHistory");
+    private final static QName _GetPersonById_QNAME = new QName("http://soap.localdatabase.introsde/", "getPersonById");
     private final static QName _UpdatePersonResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "updatePersonResponse");
     private final static QName _ReadPersonHistoryResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "readPersonHistoryResponse");
     private final static QName _GetPeopleList_QNAME = new QName("http://soap.localdatabase.introsde/", "getPeopleList");
     private final static QName _UpdatePerson_QNAME = new QName("http://soap.localdatabase.introsde/", "updatePerson");
     private final static QName _ReadPersonMeasureResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "readPersonMeasureResponse");
     private final static QName _ReadPersonMeasure_QNAME = new QName("http://soap.localdatabase.introsde/", "readPersonMeasure");
+    private final static QName _ReadMeasureTypesResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "readMeasureTypesResponse");
     private final static QName _SavePersonMeasure_QNAME = new QName("http://soap.localdatabase.introsde/", "savePersonMeasure");
     private final static QName _SavePersonMeasureResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "savePersonMeasureResponse");
-    private final static QName _CreateActivity_QNAME = new QName("http://soap.localdatabase.introsde/", "createActivity");
     private final static QName _CreatePersonResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "createPersonResponse");
     private final static QName _DeletePerson_QNAME = new QName("http://soap.localdatabase.introsde/", "deletePerson");
     private final static QName _UpdatePersonMeasure_QNAME = new QName("http://soap.localdatabase.introsde/", "updatePersonMeasure");
+    private final static QName _GetPersonByIdResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "getPersonByIdResponse");
     private final static QName _ReadMeasureTypes_QNAME = new QName("http://soap.localdatabase.introsde/", "readMeasureTypes");
     private final static QName _CreatePerson_QNAME = new QName("http://soap.localdatabase.introsde/", "createPerson");
-    private final static QName _UpdateActivityResponse_QNAME = new QName("http://soap.localdatabase.introsde/", "updateActivityResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: introsde.localdatabase.soap
@@ -71,94 +62,6 @@ public class ObjectFactory {
      */
     public Person createPerson() {
         return new Person();
-    }
-
-    /**
-     * Create an instance of {@link Activity }
-     * 
-     */
-    public Activity createActivity() {
-        return new Activity();
-    }
-
-    /**
-     * Create an instance of {@link ReadMeasureTypesResponse }
-     * 
-     */
-    public ReadMeasureTypesResponse createReadMeasureTypesResponse() {
-        return new ReadMeasureTypesResponse();
-    }
-
-    /**
-     * Create an instance of {@link ReadActivityResponse }
-     * 
-     */
-    public ReadActivityResponse createReadActivityResponse() {
-        return new ReadActivityResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetPersonByIdResponse }
-     * 
-     */
-    public GetPersonByIdResponse createGetPersonByIdResponse() {
-        return new GetPersonByIdResponse();
-    }
-
-    /**
-     * Create an instance of {@link DeleteActivityResponse }
-     * 
-     */
-    public DeleteActivityResponse createDeleteActivityResponse() {
-        return new DeleteActivityResponse();
-    }
-
-    /**
-     * Create an instance of {@link ReadActivity }
-     * 
-     */
-    public ReadActivity createReadActivity() {
-        return new ReadActivity();
-    }
-
-    /**
-     * Create an instance of {@link CreateActivityResponse }
-     * 
-     */
-    public CreateActivityResponse createCreateActivityResponse() {
-        return new CreateActivityResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetPersonById }
-     * 
-     */
-    public GetPersonById createGetPersonById() {
-        return new GetPersonById();
-    }
-
-    /**
-     * Create an instance of {@link UpdateActivity }
-     * 
-     */
-    public UpdateActivity createUpdateActivity() {
-        return new UpdateActivity();
-    }
-
-    /**
-     * Create an instance of {@link DeletePersonResponse }
-     * 
-     */
-    public DeletePersonResponse createDeletePersonResponse() {
-        return new DeletePersonResponse();
-    }
-
-    /**
-     * Create an instance of {@link UpdatePersonMeasureResponse }
-     * 
-     */
-    public UpdatePersonMeasureResponse createUpdatePersonMeasureResponse() {
-        return new UpdatePersonMeasureResponse();
     }
 
     /**
@@ -178,11 +81,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link CreateActivity }
+     * Create an instance of {@link ReadMeasureTypesResponse }
      * 
      */
-    public CreateActivity createCreateActivity() {
-        return new CreateActivity();
+    public ReadMeasureTypesResponse createReadMeasureTypesResponse() {
+        return new ReadMeasureTypesResponse();
     }
 
     /**
@@ -210,19 +113,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UpdateActivityResponse }
-     * 
-     */
-    public UpdateActivityResponse createUpdateActivityResponse() {
-        return new UpdateActivityResponse();
-    }
-
-    /**
      * Create an instance of {@link ReadMeasureTypes }
      * 
      */
     public ReadMeasureTypes createReadMeasureTypes() {
         return new ReadMeasureTypes();
+    }
+
+    /**
+     * Create an instance of {@link GetPersonByIdResponse }
+     * 
+     */
+    public GetPersonByIdResponse createGetPersonByIdResponse() {
+        return new GetPersonByIdResponse();
     }
 
     /**
@@ -242,11 +145,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetPersonById }
+     * 
+     */
+    public GetPersonById createGetPersonById() {
+        return new GetPersonById();
+    }
+
+    /**
      * Create an instance of {@link UpdatePersonResponse }
      * 
      */
     public UpdatePersonResponse createUpdatePersonResponse() {
         return new UpdatePersonResponse();
+    }
+
+    /**
+     * Create an instance of {@link DeletePersonResponse }
+     * 
+     */
+    public DeletePersonResponse createDeletePersonResponse() {
+        return new DeletePersonResponse();
     }
 
     /**
@@ -274,11 +193,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteActivity }
+     * Create an instance of {@link UpdatePersonMeasureResponse }
      * 
      */
-    public DeleteActivity createDeleteActivity() {
-        return new DeleteActivity();
+    public UpdatePersonMeasureResponse createUpdatePersonMeasureResponse() {
+        return new UpdatePersonMeasureResponse();
     }
 
     /**
@@ -338,105 +257,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonMeasureResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "updatePersonMeasureResponse")
-    public JAXBElement<UpdatePersonMeasureResponse> createUpdatePersonMeasureResponse(UpdatePersonMeasureResponse value) {
-        return new JAXBElement<UpdatePersonMeasureResponse>(_UpdatePersonMeasureResponse_QNAME, UpdatePersonMeasureResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeletePersonResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "deletePersonResponse")
-    public JAXBElement<DeletePersonResponse> createDeletePersonResponse(DeletePersonResponse value) {
-        return new JAXBElement<DeletePersonResponse>(_DeletePersonResponse_QNAME, DeletePersonResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateActivityResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "createActivityResponse")
-    public JAXBElement<CreateActivityResponse> createCreateActivityResponse(CreateActivityResponse value) {
-        return new JAXBElement<CreateActivityResponse>(_CreateActivityResponse_QNAME, CreateActivityResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetPersonById }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "getPersonById")
-    public JAXBElement<GetPersonById> createGetPersonById(GetPersonById value) {
-        return new JAXBElement<GetPersonById>(_GetPersonById_QNAME, GetPersonById.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateActivity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "updateActivity")
-    public JAXBElement<UpdateActivity> createUpdateActivity(UpdateActivity value) {
-        return new JAXBElement<UpdateActivity>(_UpdateActivity_QNAME, UpdateActivity.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Activity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "activity")
-    public JAXBElement<Activity> createActivity(Activity value) {
-        return new JAXBElement<Activity>(_Activity_QNAME, Activity.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadMeasureTypesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "readMeasureTypesResponse")
-    public JAXBElement<ReadMeasureTypesResponse> createReadMeasureTypesResponse(ReadMeasureTypesResponse value) {
-        return new JAXBElement<ReadMeasureTypesResponse>(_ReadMeasureTypesResponse_QNAME, ReadMeasureTypesResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteActivityResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "deleteActivityResponse")
-    public JAXBElement<DeleteActivityResponse> createDeleteActivityResponse(DeleteActivityResponse value) {
-        return new JAXBElement<DeleteActivityResponse>(_DeleteActivityResponse_QNAME, DeleteActivityResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadActivity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "readActivity")
-    public JAXBElement<ReadActivity> createReadActivity(ReadActivity value) {
-        return new JAXBElement<ReadActivity>(_ReadActivity_QNAME, ReadActivity.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetPersonByIdResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "getPersonByIdResponse")
-    public JAXBElement<GetPersonByIdResponse> createGetPersonByIdResponse(GetPersonByIdResponse value) {
-        return new JAXBElement<GetPersonByIdResponse>(_GetPersonByIdResponse_QNAME, GetPersonByIdResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadActivityResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "readActivityResponse")
-    public JAXBElement<ReadActivityResponse> createReadActivityResponse(ReadActivityResponse value) {
-        return new JAXBElement<ReadActivityResponse>(_ReadActivityResponse_QNAME, ReadActivityResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Person }{@code >}}
      * 
      */
@@ -452,15 +272,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "readPerson")
     public JAXBElement<ReadPerson> createReadPerson(ReadPerson value) {
         return new JAXBElement<ReadPerson>(_ReadPerson_QNAME, ReadPerson.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteActivity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "deleteActivity")
-    public JAXBElement<DeleteActivity> createDeleteActivity(DeleteActivity value) {
-        return new JAXBElement<DeleteActivity>(_DeleteActivity_QNAME, DeleteActivity.class, null, value);
     }
 
     /**
@@ -491,12 +302,39 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdatePersonMeasureResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "updatePersonMeasureResponse")
+    public JAXBElement<UpdatePersonMeasureResponse> createUpdatePersonMeasureResponse(UpdatePersonMeasureResponse value) {
+        return new JAXBElement<UpdatePersonMeasureResponse>(_UpdatePersonMeasureResponse_QNAME, UpdatePersonMeasureResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeletePersonResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "deletePersonResponse")
+    public JAXBElement<DeletePersonResponse> createDeletePersonResponse(DeletePersonResponse value) {
+        return new JAXBElement<DeletePersonResponse>(_DeletePersonResponse_QNAME, DeletePersonResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadPersonHistory }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "readPersonHistory")
     public JAXBElement<ReadPersonHistory> createReadPersonHistory(ReadPersonHistory value) {
         return new JAXBElement<ReadPersonHistory>(_ReadPersonHistory_QNAME, ReadPersonHistory.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetPersonById }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "getPersonById")
+    public JAXBElement<GetPersonById> createGetPersonById(GetPersonById value) {
+        return new JAXBElement<GetPersonById>(_GetPersonById_QNAME, GetPersonById.class, null, value);
     }
 
     /**
@@ -554,6 +392,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadMeasureTypesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "readMeasureTypesResponse")
+    public JAXBElement<ReadMeasureTypesResponse> createReadMeasureTypesResponse(ReadMeasureTypesResponse value) {
+        return new JAXBElement<ReadMeasureTypesResponse>(_ReadMeasureTypesResponse_QNAME, ReadMeasureTypesResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link SavePersonMeasure }{@code >}}
      * 
      */
@@ -569,15 +416,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "savePersonMeasureResponse")
     public JAXBElement<SavePersonMeasureResponse> createSavePersonMeasureResponse(SavePersonMeasureResponse value) {
         return new JAXBElement<SavePersonMeasureResponse>(_SavePersonMeasureResponse_QNAME, SavePersonMeasureResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CreateActivity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "createActivity")
-    public JAXBElement<CreateActivity> createCreateActivity(CreateActivity value) {
-        return new JAXBElement<CreateActivity>(_CreateActivity_QNAME, CreateActivity.class, null, value);
     }
 
     /**
@@ -608,6 +446,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetPersonByIdResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "getPersonByIdResponse")
+    public JAXBElement<GetPersonByIdResponse> createGetPersonByIdResponse(GetPersonByIdResponse value) {
+        return new JAXBElement<GetPersonByIdResponse>(_GetPersonByIdResponse_QNAME, GetPersonByIdResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ReadMeasureTypes }{@code >}}
      * 
      */
@@ -623,15 +470,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "createPerson")
     public JAXBElement<CreatePerson> createCreatePerson(CreatePerson value) {
         return new JAXBElement<CreatePerson>(_CreatePerson_QNAME, CreatePerson.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateActivityResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://soap.localdatabase.introsde/", name = "updateActivityResponse")
-    public JAXBElement<UpdateActivityResponse> createUpdateActivityResponse(UpdateActivityResponse value) {
-        return new JAXBElement<UpdateActivityResponse>(_UpdateActivityResponse_QNAME, UpdateActivityResponse.class, null, value);
     }
 
 }
