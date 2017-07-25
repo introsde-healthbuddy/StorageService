@@ -43,27 +43,28 @@ public interface Storage {
     @WebResult(name="success") 
     public int deletePerson(@WebParam(name="idPerson") Long id);
 
-//    
-//    @WebMethod(operationName="readPersonHistory")
-//    @WebResult(name="measure") 
-//    public List<Measure> readPersonHistory(@WebParam(name="idPerson") Long id, @WebParam(name="measureType") String measureType);
-//    
-//    @WebMethod(operationName="readMeasureTypes")
-//    @WebResult(name="measure") 
-//    public List<Measure> readMeasureTypes();
-//    
-//    @WebMethod(operationName="readPersonMeasure")
-//    @WebResult(name="measure") 
-//    public Measure readPersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measureType") String measureType, @WebParam(name="measureId") Long mid);
-//    
-//    @WebMethod(operationName="savePersonMeasure")
-//    @WebResult(name="measure") 
-//    public Measure savePersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measure") Measure measure);
-//   
-//    @WebMethod(operationName="updatePersonMeasure")
-//    @WebResult(name="measure") 
-//    public Measure updatePersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measure") Measure measure);
-//    
+    
+    @WebMethod(operationName="readPersonHistory")
+    @WebResult(name="measure") 
+    public List<Measure> readPersonHistory(@WebParam(name="idPerson") Long id, @WebParam(name="measureType") String measureType);
+    
+    @WebMethod(operationName="readMeasureTypes")
+    @WebResult(name="measure") 
+    public List<Measure> readMeasureTypes();
+    
+    @WebMethod(operationName="readPersonMeasure")
+    @WebResult(name="measure") 
+    public Measure readPersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measureType") String measureType, @WebParam(name="measureId") Long mid);
+    
+    @WebMethod(operationName="savePersonMeasure")
+    @WebResult(name="measure") 
+    public Measure savePersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measure") Measure measure);
+   
+    @WebMethod(operationName="updatePersonMeasure")
+    @WebResult(name="measure") 
+    public Measure updatePersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measure") Measure measure);
+
+        
 ////    @WebMethod(operationName="getAuth_info")
 ////    public Person get_auth(@WebParam(name="personId") int id);	
 //    

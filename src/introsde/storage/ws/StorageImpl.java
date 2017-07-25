@@ -76,30 +76,30 @@ public class StorageImpl implements Storage{
 //	HEALTH
 	
 	
-//	@Override
-//	public List<Measure> readPersonHistory(Long id, String measureType) {
-//		initialize();
-//		return pInterface.readPersonHistory(id, measureType);
-//	}
-//
-//
-//	@Override
-//	public List<Measure> readMeasureTypes() {
-//		initialize();
-//		return pInterface.readMeasureTypes();
-//	}
-//
-//
-//	@Override
-//	public Measure readPersonMeasure(Long id, String measureType, Long mid) {
-//		initialize();
-//		return pInterface.readPersonMeasure(id, measureType, mid);
-//	}
-//
-//
-//	@Override
-//	public Measure savePersonMeasure(Long id, Measure measure) {
-//		initialize();
+	@Override
+	public List<Measure> readPersonHistory(Long id, String measureType) {
+		initialize();
+		return pInterface.readPersonHistory(id, measureType);
+	}
+
+
+	@Override
+	public List<Measure> readMeasureTypes() {
+		initialize();
+		return pInterface.readMeasureTypes();
+	}
+
+
+	@Override
+	public Measure readPersonMeasure(Long id, String measureType, Long mid) {
+		initialize();
+		return pInterface.readPersonMeasure(id, measureType, mid);
+	}
+
+
+	@Override
+	public Measure savePersonMeasure(Long id, Measure measure) {
+		initialize();
 //		if(measure.getMeasureType().equals("weight")){
 //			Person p = pInterface.readPerson(id);
 //			introsde.adapter.ws.Person person = new introsde.adapter.ws.Person();
@@ -108,37 +108,40 @@ public class StorageImpl implements Storage{
 //			System.out.println(Double.parseDouble(measure.getMeasureValue()));
 //			aInterface.weightUpdate(person, Double.parseDouble(measure.getMeasureValue()));
 //		}
-//		Holder<Measure> holder=new Holder<Measure>(measure);
-//		pInterface.savePersonMeasure(id, holder);
-//		return holder.value;
-//	}
-//
-//
-//	@Override
-//	public Measure updatePersonMeasure(Long id, Measure measure) {
-//		return null;
-//	}
-//
-//
-//	@Override
-//	public List<Exercise> getExercises() {
-//		initialize();
-//		return aInterface.getExercises();
-//	}
-//
-//
-//	@Override
-//	public Food getFood(int id) {
-//		initialize();
-//		return aInterface.getFood(id);
-//	}
-//
-//
+		Holder<Measure> holder=new Holder<Measure>(measure);
+		pInterface.savePersonMeasure(id, holder);
+		return holder.value;
+	}
+
+
+	@Override
+	public Measure updatePersonMeasure(Long id, Measure measure) {
+		return null;
+	}
+
+//	FOOD
+	
 	@Override
 	public List<Food> searchFood(String s) {
 		initialize();
 		return aInterface.searchFood(s);
 	}
+	
+	
+//	@Override
+//	public Food getFood(int id) {
+//		initialize();
+//		return aInterface.getFood(id);
+//	}
+	
+//	EXERCISES
+	
+//		@Override
+//		public List<Exercise> getExercises() {
+//			initialize();
+//			return aInterface.getExercises();
+//		}
+	
 //
 //
 //	@Override
