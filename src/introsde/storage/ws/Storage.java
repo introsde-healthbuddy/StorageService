@@ -43,9 +43,9 @@ public interface Storage {
     @WebResult(name="success") 
     public int deletePerson(@WebParam(name="idPerson") Long id);
     
-    @WebMethod(operationName="getPersonByChatId")
-    @WebResult(name="person") 
-    public Person getPersonByChatId(@WebParam(name="chatId") Long chatId);
+//    @WebMethod(operationName="getPersonByChatId")
+//    @WebResult(name="person") 
+//    public Person getPersonByChatId(@WebParam(name="chatId") Long chatId);
     
     @WebMethod(operationName="readPersonHistory")
     @WebResult(name="measure") 
