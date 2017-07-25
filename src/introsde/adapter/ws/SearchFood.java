@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per searchFood complex type.
+ * <p>Java class for searchFood complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="searchFood">
@@ -34,7 +34,7 @@ public class SearchFood {
     protected String text;
 
     /**
-     * Recupera il valore della proprietà text.
+     * Gets the value of the text property.
      * 
      * @return
      *     possible object is
@@ -46,7 +46,7 @@ public class SearchFood {
     }
 
     /**
-     * Imposta il valore della proprietà text.
+     * Sets the value of the text property.
      * 
      * @param value
      *     allowed object is

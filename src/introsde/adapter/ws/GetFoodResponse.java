@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per getFoodResponse complex type.
+ * <p>Java class for getFoodResponse complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="getFoodResponse">
@@ -36,7 +36,7 @@ public class GetFoodResponse {
     protected Food _return;
 
     /**
-     * Recupera il valore della proprietà return.
+     * Gets the value of the return property.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class GetFoodResponse {
     }
 
     /**
-     * Imposta il valore della proprietà return.
+     * Sets the value of the return property.
      * 
      * @param value
      *     allowed object is

@@ -1,7 +1,10 @@
 
 package introsde.adapter.ws;
 
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
+import javax.xml.namespace.QName;
 
 
 /**
@@ -21,6 +24,10 @@ import javax.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _SearchFoodResponse_QNAME = new QName("http://ws.adapter.introsde/", "searchFoodResponse");
+    private final static QName _GetFoodResponse_QNAME = new QName("http://ws.adapter.introsde/", "getFoodResponse");
+    private final static QName _GetFood_QNAME = new QName("http://ws.adapter.introsde/", "getFood");
+    private final static QName _SearchFood_QNAME = new QName("http://ws.adapter.introsde/", "searchFood");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: introsde.adapter.ws
@@ -30,19 +37,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Recipe }
+     * Create an instance of {@link SearchFood }
      * 
      */
-    public Recipe createRecipe() {
-        return new Recipe();
+    public SearchFood createSearchFood() {
+        return new SearchFood();
     }
 
     /**
-     * Create an instance of {@link Exercise }
+     * Create an instance of {@link GetFood }
      * 
      */
-    public Exercise createExercise() {
-        return new Exercise();
+    public GetFood createGetFood() {
+        return new GetFood();
+    }
+
+    /**
+     * Create an instance of {@link GetFoodResponse }
+     * 
+     */
+    public GetFoodResponse createGetFoodResponse() {
+        return new GetFoodResponse();
+    }
+
+    /**
+     * Create an instance of {@link SearchFoodResponse }
+     * 
+     */
+    public SearchFoodResponse createSearchFoodResponse() {
+        return new SearchFoodResponse();
     }
 
     /**
@@ -51,6 +74,42 @@ public class ObjectFactory {
      */
     public Food createFood() {
         return new Food();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SearchFoodResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "searchFoodResponse")
+    public JAXBElement<SearchFoodResponse> createSearchFoodResponse(SearchFoodResponse value) {
+        return new JAXBElement<SearchFoodResponse>(_SearchFoodResponse_QNAME, SearchFoodResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetFoodResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "getFoodResponse")
+    public JAXBElement<GetFoodResponse> createGetFoodResponse(GetFoodResponse value) {
+        return new JAXBElement<GetFoodResponse>(_GetFoodResponse_QNAME, GetFoodResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetFood }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "getFood")
+    public JAXBElement<GetFood> createGetFood(GetFood value) {
+        return new JAXBElement<GetFood>(_GetFood_QNAME, GetFood.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SearchFood }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://ws.adapter.introsde/", name = "searchFood")
+    public JAXBElement<SearchFood> createSearchFood(SearchFood value) {
+        return new JAXBElement<SearchFood>(_SearchFood_QNAME, SearchFood.class, null, value);
     }
 
 }

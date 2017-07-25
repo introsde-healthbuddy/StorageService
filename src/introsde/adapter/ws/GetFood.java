@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java per getFood complex type.
+ * <p>Java class for getFood complex type.
  * 
- * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="getFood">
@@ -34,7 +34,7 @@ public class GetFood {
     protected int foodId;
 
     /**
-     * Recupera il valore della proprietà foodId.
+     * Gets the value of the foodId property.
      * 
      */
     public int getFoodId() {
@@ -42,7 +42,7 @@ public class GetFood {
     }
 
     /**
-     * Imposta il valore della proprietà foodId.
+     * Sets the value of the foodId property.
      * 
      */
     public void setFoodId(int value) {
