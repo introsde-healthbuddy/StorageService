@@ -148,7 +148,7 @@ public class StorageImpl implements Storage{
 //	public int deleteActivity(Long id) {
 //		initialize();
 //		return pInterface.deleteActivity(id);
-	}
+//	}
 
 //	FOOD
 	
