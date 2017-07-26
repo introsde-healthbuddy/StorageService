@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -19,11 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="authSecret" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="authToken" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="birthdate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="caloriesMeal" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="chatId" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
  *         &lt;element name="currentHealth" minOccurs="0">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -49,11 +44,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "person", propOrder = {
-    "authSecret",
-    "authToken",
     "birthdate",
-    "caloriesMeal",
-    "chatId",
     "currentHealth",
     "email",
     "firstname",
@@ -62,64 +53,12 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class Person {
 
-    protected String authSecret;
-    protected String authToken;
     protected String birthdate;
-    protected Long caloriesMeal;
-    protected Long chatId;
     protected Person.CurrentHealth currentHealth;
     protected String email;
     protected String firstname;
     protected Long idPerson;
     protected String lastname;
-
-    /**
-     * Gets the value of the authSecret property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAuthSecret() {
-        return authSecret;
-    }
-
-    /**
-     * Sets the value of the authSecret property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAuthSecret(String value) {
-        this.authSecret = value;
-    }
-
-    /**
-     * Gets the value of the authToken property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getAuthToken() {
-        return authToken;
-    }
-
-    /**
-     * Sets the value of the authToken property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setAuthToken(String value) {
-        this.authToken = value;
-    }
 
     /**
      * Gets the value of the birthdate property.
@@ -143,54 +82,6 @@ public class Person {
      */
     public void setBirthdate(String value) {
         this.birthdate = value;
-    }
-
-    /**
-     * Gets the value of the caloriesMeal property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getCaloriesMeal() {
-        return caloriesMeal;
-    }
-
-    /**
-     * Sets the value of the caloriesMeal property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setCaloriesMeal(Long value) {
-        this.caloriesMeal = value;
-    }
-
-    /**
-     * Gets the value of the chatId property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Long }
-     *     
-     */
-    public Long getChatId() {
-        return chatId;
-    }
-
-    /**
-     * Sets the value of the chatId property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Long }
-     *     
-     */
-    public void setChatId(Long value) {
-        this.chatId = value;
     }
 
     /**
@@ -339,7 +230,6 @@ public class Person {
     })
     public static class CurrentHealth {
 
-        @XmlElement(nillable = true)
         protected List<Measure> measure;
 
         /**

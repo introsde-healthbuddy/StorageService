@@ -6,7 +6,7 @@ import javax.jws.WebService;
 import javax.xml.ws.Holder;
 
 import introsde.storage.ws.Storage;
-
+import introsde.localdatabase.soap.Activity;
 import introsde.localdatabase.soap.*;
 import introsde.localdatabase.soap.Person;
 import introsde.adapter.ws.*;
@@ -130,5 +130,37 @@ public class StorageImpl implements Storage{
 			initialize();
 			return aInterface.getExercises();
 		}
+		
+//		Activity
+		
+		@Override
+		public List<Activity> readActivity(Long id) {
+			initialize();
+			return pInterface.readActivity(id);
+		}
+	
+		@Override
+		public Activity createActivity(Long id, Activity a) {
+			initialize();
+			Holder<Activity> holder = new Holder<Activity>(a);
+			pInterface.createActivity(id, holder);
+			return holder.value;
+		}
+		@Override
+		public Activity updateActivity(Long id, Activity a) {
+			initialize();
+			Holder<Activity> holder=new Holder<Activity>(a);
+			pInterface.updateActivity(id, holder);
+			return holder.value;
+			
+		}
+		
+		@Override 
+		public int deleteActivity(Long id) {
+			initialize();
+			return pInterface.deleteActivity(id);
+		}
+
+//		FOOD
 
 }
