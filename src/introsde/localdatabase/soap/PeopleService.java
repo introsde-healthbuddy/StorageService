@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "PeopleService", targetNamespace = "http://soap.localdatabase.introsde/", wsdlLocation = "http://10.218.204.126:6902/soap/people?wsdl")
+@WebServiceClient(name = "PeopleService", targetNamespace = "http://soap.localdatabase.introsde/", wsdlLocation = "https://healthbuddy-localdatabase.herokuapp.com/soap/people?wsdl")
 public class PeopleService
     extends Service
 {
@@ -30,7 +30,7 @@ public class PeopleService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://10.218.204.126:6902/soap/people?wsdl");
+            url = new URL("https://healthbuddy-localdatabase.herokuapp.com/soap/people?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
