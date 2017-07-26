@@ -87,6 +87,5 @@ public interface Storage {
     @WebMethod(operationName="searchFood")
     @WebResult(name="foods") 
     public List<Food> searchFood(@WebParam(name="text") String s);
-
     
 }
