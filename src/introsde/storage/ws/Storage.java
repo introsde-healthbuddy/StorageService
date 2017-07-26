@@ -42,7 +42,6 @@ public interface Storage {
     @WebMethod(operationName="deletePerson")
     @WebResult(name="success") 
     public int deletePerson(@WebParam(name="idPerson") Long id);
-
     
     @WebMethod(operationName="readPersonHistory")
     @WebResult(name="measure") 
@@ -64,50 +63,12 @@ public interface Storage {
     @WebResult(name="measure") 
     public Measure updatePersonMeasure(@WebParam(name="idPerson") Long id, @WebParam(name="measure") Measure measure);
 
-        
-////    @WebMethod(operationName="getAuth_info")
-////    public Person get_auth(@WebParam(name="personId") int id);	
-//    
-//    @WebMethod(operationName="setInfo")
-//    @WebResult(name="success") 
-//    public boolean setInfo(@WebParam(name="user") Person user, @WebParam(name="weight") double weight, @WebParam(name="height") double height, @WebParam(name="weight_goal") double weight_goal);
-//    
-//    @WebMethod(operationName="getExercises")
-//    @WebResult(name="exercises") 
-//    public List<Exercise> getExercises();
-//    
-//    @WebMethod(operationName="getFood")
-//    @WebResult(name="food") 
-//    public Food getFood(@WebParam(name="foodId") int id);
-//    
     @WebMethod(operationName="searchFood")
     @WebResult(name="foods") 
     public List<Food> searchFood(@WebParam(name="text") String s);
-//    
-//    //Recipes
-//    @WebMethod(operationName="getRecipe")
-//    @WebResult(name="recipe") 
-//    public Recipe getRecipe(@WebParam(name="recipeId") int id);
-//    
-//    @WebMethod(operationName="searchRecipes")
-//    @WebResult(name="recipes") 
-//    public List<Recipe> searchRecipes(@WebParam(name="text") String s);
-//    
-//    //Exercise Diary
-//    @WebMethod(operationName="getExerciseEntry")
-//    public List<Exercise> getExerciseEntry(@WebParam(name="user") Person user, @WebParam(name="date") int date);
-//    
-//    @WebMethod(operationName="editExerciseEntry")
-//    public boolean editExerciseEntry(@WebParam(name="user") Person user, @WebParam(name="id_exercise") int id, @WebParam(name="minutes") int minutes);
-//    
-//    @WebMethod(operationName="removeSleepTime")
-//    public boolean removeSleepTime(@WebParam(name="user") Person user, @WebParam(name="minutes") int minutes);
-//    
-//    @WebMethod(operationName="saveTemplate")
-//    public boolean saveTemplate(@WebParam(name="user") Person user, @WebParam(name="days") int days);
-//    
-//    @WebMethod(operationName="commitDay")
-//    public boolean commitDay(@WebParam(name="user") Person user);
-
+    
+    @WebMethod(operationName="getExercises")
+    @WebResult(name="exercises") 
+    public List<Exercise> getExercises();
     
 }
