@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;complexContent>
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *                 &lt;sequence>
- *                   &lt;element ref="{http://soap.localdatabase.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
+ *                   &lt;element name="measure" type="{http://soap.localdatabase.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
  *                 &lt;/sequence>
  *               &lt;/restriction>
  *             &lt;/complexContent>
@@ -324,7 +324,7 @@ public class Person {
      *   &lt;complexContent>
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
      *       &lt;sequence>
-     *         &lt;element ref="{http://soap.localdatabase.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
+     *         &lt;element name="measure" type="{http://soap.localdatabase.introsde/}measure" maxOccurs="unbounded" minOccurs="0"/>
      *       &lt;/sequence>
      *     &lt;/restriction>
      *   &lt;/complexContent>
@@ -339,7 +339,7 @@ public class Person {
     })
     public static class CurrentHealth {
 
-        @XmlElement(namespace = "http://soap.localdatabase.introsde/")
+        @XmlElement(nillable = true)
         protected List<Measure> measure;
 
         /**
